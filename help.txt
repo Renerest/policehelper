@@ -17,4 +17,4 @@
 
 {DFDA26}РЕДАКТИРОВАНИЕ: 
 {FFFFFF}Комбинацией P + L открывается меню.
-Статьи редактируются в файлике moonloader/light police helper/articles.txt.
+Статьи редактируются в файлике {DFDA26}moonloader/light police helper/articles.txt.
