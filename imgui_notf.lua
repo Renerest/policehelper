@@ -97,6 +97,7 @@ end
 setstyle()
 
 function main()
+	showCursor(false)
 	while true do
 		wait(0)
 		imgui_notf.ShowCursor = false
@@ -110,6 +111,7 @@ function imgui_notf.OnDrawFrame()
 end
 
 function onRenderNotification()
+	showCursor(false)
 	local count = 0
 	for k, v in ipairs(message) do
 		local push = false
