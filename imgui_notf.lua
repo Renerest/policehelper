@@ -52,7 +52,7 @@ function setstyle()
 
 	colors[clr.Text]                   = ImVec4(1.00, 1.00, 1.00, 1.00)
 	colors[clr.TextDisabled]           = ImVec4(0.50, 0.50, 0.50, 1.00)
-	colors[clr.WindowBg]               = ImVec4(0.06, 0.06, 0.06, 0.71)
+	colors[clr.WindowBg]               = ImVec4(0.48, 0.16, 0.16, 0.54)
 	colors[clr.ChildWindowBg]          = ImVec4(1.00, 1.00, 1.00, 0.00)
 	colors[clr.PopupBg]                = ImVec4(0.08, 0.08, 0.08, 0.94)
 	colors[clr.ComboBg]                = colors[clr.PopupBg]
@@ -116,7 +116,7 @@ function onRenderNotification()
 		if v.active and v.time < os.clock() then
 			v.active = false
 		end
-		if count < 3 then
+		if count < 6 then
 			if not v.active then
 				if v.showtime > 0 then
 					v.active = true
@@ -131,10 +131,10 @@ function onRenderNotification()
 					push = true
 				end
 				local nText = u8(tostring(v.text))
-				notfList.size = imgui_notf.GetFont():CalcTextSizeA(imgui_notf.GetFont().FontSize, 200.0, 196.0, nText)
+				notfList.size = imgui_notf.GetFont():CalcTextSizeA(imgui_notf.GetFont().FontSize, 500.0, 196.0, nText)
 				notfList.pos = imgui_notf.ImVec2(notfList.pos.x, notfList.pos.y - (notfList.size.y + (count == 1 and 8 or 13)))
 				imgui_notf.SetNextWindowPos(notfList.pos, _, imgui_notf.ImVec2(0.0, 0.0))
-				imgui_notf.SetNextWindowSize(imgui_notf.ImVec2(200, notfList.size.y + imgui_notf.GetStyle().ItemSpacing.y + imgui_notf.GetStyle().WindowPadding.y))
+				imgui_notf.SetNextWindowSize(imgui_notf.ImVec2(400, notfList.size.y + imgui_notf.GetStyle().ItemSpacing.y + imgui_notf.GetStyle().WindowPadding.y))
 				imgui_notf.Begin(u8'##msg' .. k, _, imgui_notf.WindowFlags.NoCollapse + imgui_notf.WindowFlags.NoResize + imgui_notf.WindowFlags.NoScrollbar + imgui_notf.WindowFlags.NoMove + imgui_notf.WindowFlags.NoTitleBar)
 				imgui_notf.TextWrapped(nText)
 				imgui_notf.End()
@@ -147,15 +147,15 @@ function onRenderNotification()
 	sX, sY = ToScreen(630, 438)
 	notfList = {
 		pos = {
-			x = sX - 200,
+			x = sX - 400,
 			y = sY
 		},
 		npos = {
-			x = sX - 200,
+			x = sX - 400,
 			y = sY
 		},
 		size = {
-			x = 200,
+			x = 400,
 			y = 0
 		}
 	}
