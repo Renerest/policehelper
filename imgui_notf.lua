@@ -35,20 +35,12 @@ function setstyle()
 	style.ScrollbarRounding = 0
 	style.GrabMinSize = 8.0
 	style.GrabRounding = 1.0
-	-- style.Alpha =
+	
 	style.WindowPadding = imgui_notf.ImVec2(4.0, 4.0)
 	style.WindowMinSize = imgui_notf.ImVec2(1.0, 1.0)
 	style.FramePadding = imgui_notf.ImVec2(3.5, 3.5)
-	-- style.ItemInnerSpacing =
-	-- style.TouchExtraPadding =
-	-- style.IndentSpacing =
-	-- style.ColumnsMinSpacing = ?
+
 	style.ButtonTextAlign = imgui_notf.ImVec2(0.0, 0.5)
-	-- style.DisplayWindowPadding =
-	-- style.DisplaySafeAreaPadding =
-	-- style.AntiAliasedLines =
-	-- style.AntiAliasedShapes =
-	-- style.CurveTessellationTol =
 
 	colors[clr.Text]                   = ImVec4(1.00, 1.00, 1.00, 1.00)
 	colors[clr.TextDisabled]           = ImVec4(0.50, 0.50, 0.50, 1.00)
@@ -164,17 +156,3 @@ end
 function EXPORTS.addNotification(text, time)
 	message[#message+1] = {active = false, time = 0, showtime = time, text = text}
 end
-
--- local function New()
--- 	return {
--- 		onRenderNotification = function()
--- 			return onRenderNotification()
--- 		end,
--- 		addNotification = function(text, time)
--- 			return addNotification(text, time)
--- 		end
--- 	}
--- end
--- local notification = New()
--- notification.New = New
--- return notification
