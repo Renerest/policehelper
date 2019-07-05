@@ -5,7 +5,8 @@ LIGHT POLICE HELPER
 
 ВНИМАНИЕ! 
 У кого некорректно отображаются районы (не отображаются или только их английская часть), то следует поставить 
-SanLtd перевод игры. Ссылка: https://mega.nz/#!4wxXVYgB!Qh0cDcWLEvj4SRTw1mzSIQcIRm9pMKOst3HUR3HNEuI.
+ЧАСТИЧНУЮ (НЕ ПОЛНУЮ) локализацию от SanLtd. 
+Ссылка: https://mega.nz/#!4wxXVYgB!Qh0cDcWLEvj4SRTw1mzSIQcIRm9pMKOst3HUR3HNEuI.
 
 УПРАВЛЕНИЕ ПРОИЗВОДИТСЯ ЧЕРЕЗ ПКМ! ПКМ НАЖИМАЕТСЯ ПЕРВЫМ (ЧТОБЫ НЕ БЫЛО СЛУЧАЙНЫХ 
 АКТИВАЦИЙ)!
